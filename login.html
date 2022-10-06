@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <!-- <link rel="stylesheet" type="text/css" href="/.style11.css"> -->
+<link rel="stylesheet" href="style11.css">
+
+</head>
+<body>
+
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyCxPKF13bx5tINOYUaMGdwpfoZBawlwTR8",
+		  authDomain: "rsa-courier-services.firebaseapp.com",
+		  projectId: "rsa-courier-services",
+		  storageBucket: "rsa-courier-services.appspot.com",
+		  messagingSenderId: "853252678185",
+		  appId: "1:853252678185:web:c11122ef8d95df9cdf3238",
+		  measurementId: "G-3T85KHPLYG"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+
+	function write(){
+		firebase.database.getElementById("User").set({
+			Username:document.getElementById("")
+		})
+	}
+	  </script>
+
+  <div class="header">
+  	<h2>Login</h2>
+  </div>
+	 
+  <form>
+  	<div class="input-group">
+  		<label>Username</label>
+  		<input type="text" name="username" id="username"  placeholder="name">
+  	</div>
+	  <div class="input-group">
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" placeholder="email">
+	  </div>
+  	<div class="input-group">
+  		<label>Password</label>
+  		<input type="password" name="password" id="password" placeholder="password">
+  	</div>
+  	<div class="input-group">
+  		<button  onclick =" witeData" type="submit" class="btn" name="login_user">Login</button>
+  	</div>
+  	<p>
+  		Not yet a member? <a href="/signup.html">Sign up</a><br>
+		  <a href="#">forget password</a> 
+		 
+  	</p>
+  </form>
+</body>
+</html>
